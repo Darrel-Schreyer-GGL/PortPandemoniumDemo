@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34902.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A6219DF6-0291-4938-8928-E63AF8E7E2BE}"
+	ProjectSection(SolutionItems) = preProject
+		CheckNetwork.ps1 = CheckNetwork.ps1
+		..\README.md = ..\README.md
+		ReclaimPorts.ps1 = ReclaimPorts.ps1
+		RunClient.ps1 = RunClient.ps1
+		StartServer.ps1 = StartServer.ps1
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortPandemoniumDemo.Server", "PortPandemoniumDemo.Server\PortPandemoniumDemo.Server.csproj", "{18AFF499-E027-4B67-8648-0E6C49407F17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortPandemoniumDemo.EvilClient", "PortPandemoniumDemo.EvilClient\PortPandemoniumDemo.EvilClient.csproj", "{5A205B93-CFB9-4C1D-A1AC-B2C98368A10A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortPandemoniumDemo.Cli", "PortPandemoniumDemo.Cli\PortPandemoniumDemo.Cli.csproj", "{973DF3A2-50D0-4238-B073-438424A53576}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18AFF499-E027-4B67-8648-0E6C49407F17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18AFF499-E027-4B67-8648-0E6C49407F17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18AFF499-E027-4B67-8648-0E6C49407F17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18AFF499-E027-4B67-8648-0E6C49407F17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A205B93-CFB9-4C1D-A1AC-B2C98368A10A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A205B93-CFB9-4C1D-A1AC-B2C98368A10A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A205B93-CFB9-4C1D-A1AC-B2C98368A10A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A205B93-CFB9-4C1D-A1AC-B2C98368A10A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{973DF3A2-50D0-4238-B073-438424A53576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{973DF3A2-50D0-4238-B073-438424A53576}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{973DF3A2-50D0-4238-B073-438424A53576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{973DF3A2-50D0-4238-B073-438424A53576}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2CD7AF1C-638C-49CC-A23D-5372AFF88AB7}
+	EndGlobalSection
+EndGlobal

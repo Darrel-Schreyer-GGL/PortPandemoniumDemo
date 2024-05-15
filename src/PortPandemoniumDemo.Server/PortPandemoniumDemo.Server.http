@@ -1,0 +1,6 @@
+@PortPandemoniumDemo.Server_HostAddress = http://localhost:5258
+
+GET {{PortPandemoniumDemo.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
