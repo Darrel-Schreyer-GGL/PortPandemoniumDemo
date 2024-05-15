@@ -5,6 +5,7 @@ using PortPandemoniumDemo.Cli.BadClient;
 using PortPandemoniumDemo.Cli.BestClient;
 using PortPandemoniumDemo.Cli.EvilClient;
 using PortPandemoniumDemo.Cli.ForceClient;
+using PortPandemoniumDemo.Cli.Generics;
 
 const string url = "http://localhost:5001";
 int numberOfRequests = 10;
@@ -26,6 +27,7 @@ var handlers = new Dictionary<int, IRequestHandler>
     {2, new ForceRequestHandler(url) },
     {3, new BetterRequestHandler(url) },
     {4, new BestRequestHandler(url, httpClientFactory) },
+    {5, new GenericRequestHandler(url) },
 };
 
 
@@ -37,6 +39,7 @@ while(true)
         2. Force Client (simulates a port exhaustion)
         3. Better Client
         4. Best Client
+        5. Generic Client
 
         Type #XXXX to adjust the number of requests. 
         E.g. #25 will set the number of requests to 25.

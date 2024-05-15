@@ -1,6 +1,6 @@
-@PortPandemoniumDemo.Server_HostAddress = http://localhost:5258
+@PortPandemoniumDemo.Server_HostAddress = http://localhost:5001
 
-GET {{PortPandemoniumDemo.Server_HostAddress}}/weatherforecast/
+GET {{PortPandemoniumDemo.Server_HostAddress}}
 Accept: application/json
 
 ###

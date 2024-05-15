@@ -60,9 +60,6 @@ TIME_WAIT    10
 LISTENING     2
 ```
 
-
-
-
 ### Better Request Handler
 
 The output from the `CheckNetwork.ps1` command, which displays the network connections, is shown below.
@@ -113,3 +110,28 @@ Observations:
 - Transient Connections: Connections might be transient, appearing briefly and then closing, due to efficient connection reuse.
 
 Using HttpClientFactory reduces the number of active and lingering connections due to its connection pooling mechanism. As a result, netstat may show fewer results because the connections are efficiently managed and reused, preventing the typical port exhaustion scenario you would see with improper use of HttpClient.
+
+### Generics Request Handler
+
+The output from the `CheckNetwork.ps1` command, which displays the network connections, is shown below.
+
+```plaintext
+  TCP    127.0.0.1:5001         0.0.0.0:0              LISTENING       29480
+  TCP    [::1]:5001             [::]:0                 LISTENING       29480
+  TCP    [::1]:5001             [::1]:52709            ESTABLISHED     29480
+  TCP    [::1]:5001             [::1]:52710            ESTABLISHED     29480
+  TCP    [::1]:52689            [::1]:5001             TIME_WAIT       0
+  TCP    [::1]:52709            [::1]:5001             ESTABLISHED     33780
+  TCP    [::1]:52710            [::1]:5001             ESTABLISHED     33780
+
+Name        Count
+----        -----
+ESTABLISHED     4
+LISTENING       2
+TIME_WAIT       1
+```
+
+Observations:
+- TypeA has three instances and only a single ESTABLISHED connection.
+- TypeB has one instance and only a single ESTABLISHED connection.
+
